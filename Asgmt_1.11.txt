@@ -1,0 +1,46 @@
+# The architecture design of an e-commerce application must 
+# encompass the important high-availability principles. 
+
+# High-availability refers to -  
+# The ability of a system to remain operational and accessible for an extended period of time, with minimal downtime. 
+# This is achieved by designing a system that is :- 
+# 1) Fault-tolerant, 
+# 2) Scalable, 
+# 3) Redundant. 
+
+# Some high-availability principles that can be applied to an e-commerce application: 
+
+# Redundancy: For this, we plan for multiple servers to take over in case of a failure. 
+#             For example, multiple web servers to handle incoming traffic in case one server goes down. 
+
+# Scalability: For this we design the system that to handle increased traffic as the application grows vis Auto Scaling Group. 
+#              Achieved by adding more servers or by using load balancers to distribute traffic across multiple servers. 
+
+#Fault-tolerance: We design the system to continue operation even if one or more components fail. 
+#                  For example, having multiple database servers to take over in case one server goes down. 
+
+# Disaster recovery: In consideration of disaster recovery we install a plan to recover from disasters such as power outages, natural disasters, or cyber attacks. 
+#                    Achieved via backups of data and systems in different geological location place. 
+
+# In oredr to implement the above-mentioned principles, we employ the following types of servers: 
+
+# Web servers: 
+#               These servers handle incoming traffic from users and serve web pages. 
+
+# Application servers: 
+#               These servers run the application code and handle business logic. 
+
+# Database servers: 
+#               These servers store data used by the application. 
+
+# Load balancers: 
+#               These servers distribute incoming traffic across multiple web or application servers. 
+
+# Cache servers: 
+#               These servers store frequently accessed data in memory to reduce the load on database servers. 
+
+# Backup and recovery servers: 
+#               These servers are used to backup data and systems and recover from disasters. 
+
+# It is vital to note that the specific types of servers required is dependant on the requirements of the e-commerce application and the expected traffic volume. 
+
